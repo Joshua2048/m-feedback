@@ -59,6 +59,7 @@
     "classnames": "^2.3.2"
   },
   "devDependencies": {
+    "@babel/preset-typescript": "^7.22.15",
     "@types/classnames": "^2.3.0",
     "@types/mocha": "~10.0.1",
     "@types/react": "^18.2.22",
@@ -68,6 +69,7 @@
     "rc-test": "~7.0.15",
     "rc-tools": "9.x",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
   }
 }
