@@ -21,7 +21,7 @@
   "author": "rjmuqiang@gmail.com",
   "main": "./lib/index",
   "module": "./es/index",
-  "typings": "./lib/index.d.ts",
+  "types": "./lib/index.d.ts",
   "files": [
     "lib",
     "es",
