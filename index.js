@@ -1,2 +1,2 @@
-import TouchFeedback from "./src/index";
+import TouchFeedback from "./src";
 export default TouchFeedback;
