@@ -1,2 +1,2 @@
-require('./tests.css');
-import './usage';
+import "./tests.css";
+import "./usage";

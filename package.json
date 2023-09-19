@@ -10,65 +10,64 @@
     "active pseudo"
   ],
   "homepage": "https://github.com/react-component/m-feedback",
-  "author": "rjmuqiang@gmail.com",
+  "bugs": {
+    "url": "https://github.com/react-component/m-feedback/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/react-component/m-feedback.git"
   },
-  "bugs": {
-    "url": "https://github.com/react-component/m-feedback/issues"
-  },
+  "license": "MIT",
+  "author": "rjmuqiang@gmail.com",
+  "main": "./lib/index",
+  "module": "./es/index",
+  "typings": "./lib/index.d.ts",
   "files": [
     "lib",
     "es",
     "dist"
   ],
-  "license": "MIT",
-  "main": "./lib/index",
-  "module": "./es/index",
+  "scripts": {
+    "build": "rc-tools run build",
+    "chrome-test": "rc-test run chrome-test",
+    "compile": "rc-tools run compile --babel-runtime",
+    "coverage": "rc-test run coverage",
+    "dist": "rc-tools run dist",
+    "gh-pages": "rc-tools run gh-pages",
+    "karma": "rc-test run karma",
+    "lint": "rc-tools run lint",
+    "prepare": "rc-tools run guard",
+    "prepublishOnly": "rc-tools run guard",
+    "pub": "rc-tools run pub --babel-runtime",
+    "prepublish": "rc-tools run guard",
+    "start": "rc-tools run server",
+    "test": "rc-test run test",
+    "watch-tsc": "rc-tools run watch-tsc"
+  },
+  "pre-commit": [
+    "lint"
+  ],
   "config": {
-    "port": 8000,
     "entry": {
       "rmc-feedback": [
         "./index.js"
       ]
-    }
-  },
-  "scripts": {
-    "dist": "rc-tools run dist",
-    "watch-tsc": "rc-tools run watch-tsc",
-    "compile": "rc-tools run compile --babel-runtime",
-    "build": "rc-tools run build",
-    "gh-pages": "rc-tools run gh-pages",
-    "start": "rc-tools run server",
-    "prepublish": "rc-tools run guard",
-    "prepare": "rc-tools run guard",
-    "prepublishOnly": "rc-tools run guard",
-    "pub": "rc-tools run pub --babel-runtime",
-    "lint": "rc-tools run lint",
-    "karma": "rc-test run karma",
-    "test": "rc-test run test",
-    "chrome-test": "rc-test run chrome-test",
-    "coverage": "rc-test run coverage"
+    },
+    "port": 8000
   },
   "dependencies": {
-    "babel-runtime": "6.x",
-    "classnames": "^2.2.5"
+    "classnames": "^2.3.2"
   },
   "devDependencies": {
-    "@types/classnames": "^2.2.4",
-    "@types/mocha": "~2.2.32",
-    "@types/react": "^16.0.0",
-    "@types/react-dom": "^16.0.0",
+    "@types/classnames": "^2.3.0",
+    "@types/mocha": "~10.0.1",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
     "expect.js": "0.3.x",
     "pre-commit": "1.x",
-    "rc-test": "~6.0.3",
-    "rc-tools": "6.x",
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0"
-  },
-  "typings": "./lib/index.d.ts",
-  "pre-commit": [
-    "lint"
-  ]
+    "rc-test": "~7.0.15",
+    "rc-tools": "9.x",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
